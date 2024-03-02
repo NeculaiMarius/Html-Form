@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Programming Survey</h1>
+        <p class="description" id="description">This is a survey for beginners and also experienced programmers </p>
+    </div>
+    
+    <form id="survey-form" action="POST" data-netlify="true" >
+    <fieldset id="personal info">
+        <label for="name">Input your name: <input id="name" name="name" type="text" required placeholder=" ex: John Smmith"></label>
+        <label for="email">Input your email: <input id="email" name="email" type="email" required placeholder=" ex: johnsmith@gmail.com"></label>
+        <label for="number">Your age: <input id="number" name="age" type="number" min="12" max="120" placeholder=" ex: 20"></label>
+    </fieldset>
+
+    <fieldset>
+        <label>How did you find out about programming? 
+        <select id="dropdown" name="Dropdown">
+            <option value="">Choose one option</option>
+            <option value="School">At school</option>
+            <option value="Online">Online</option>
+            <option value="Friends">From friends</option>
+            <option value="Other">Other way</option>
+        </select>
+        </label>
+    <p>How would you rate your skill of programming?</p>
+        <label  class="no-weight"><input id="beginner" type="radio" name="skill" class="inline" value="Beginner">Beginner</label>
+        <label  class="no-weight"><input id="intermediate" type="radio" name="skill" class="inline" value="Intermediate">Intermediate</label>
+        <label  class="no-weight"><input id="advanced" type="radio" name="skill" class="inline" value="Advanced">Advanced</label>
+
+    <p>What programming language are you familiar with now?</p>
+        <label class="no-weight"><input type="checkbox" value="C / C++" name="Programming languages" class="inline"> C / C++</label>
+        <label class="no-weight"><input type="checkbox" value="HTML" name="Programming languages" class="inline"> HTML</label>
+        <label class="no-weight"><input type="checkbox" value="CSS" name="Programming languages" class="inline"> CSS</label>
+        <label class="no-weight"><input type="checkbox" value="JavaScript" name="Programming languages" class="inline"> JavaScript</label>
+        <label class="no-weight"><input type="checkbox" value="Python" name="Programming languages" class="inline"> Python</label>
+        <label class="no-weight"><input type="checkbox" value="Other" name="Programming languages" class="inline"> Other</label>
+    </fieldset>
+
+    <fieldset>
+
+        <label>What do you enjoy when it comes to programming?<textarea name="Text area"></textarea></label>
+    </fieldset>
+
+    <input id="submit" type="submit">
+    </form>
+
+
+</body>
+</html>
